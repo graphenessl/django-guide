@@ -46,7 +46,16 @@ python manage.py collectstatic
 vim project-name/settings.py
 ```
 
-These are the settings of the entire `project` not the `applications`!
+These are the settings of the entire **`project`** not the **`applications`**!
+
+---
+### Create a superuser
+```python
+python manage.py createsuperuser
+```
+
+The command will ask for **username**, **password** and **email** to be provided
+If you have Django admin module enabled, this user will be able to login in the panel
 
 ---
 ### Run server
