@@ -1,5 +1,7 @@
-# Django guide
-A guide to setting up Django, together with some basic commands
+![Django Guide and Cheat sheet](https://raw.githubusercontent.com/graphenessl/django-guide/master/images/python-django.png "Django guide and Cheat sheet")
+
+# Django guide and Cheet sheet
+A guide to setting up Django, together with some basic cheat sheet commands
 
 ### Installation for Python 2.7
 ```pip install Django==1.11.9```
