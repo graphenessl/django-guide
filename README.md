@@ -4,30 +4,52 @@
 A guide to setting up Django, together with some basic cheat sheet commands
 
 ### Installation for Python 2.7
-```pip install Django==1.11.9```
+```python
+pip install Django==1.11.9
+```
 
 ---
 ### Start a project
-```django-admin startproject project-name```
+```python
+django-admin startproject project-name
+```
 
 ---
 ### Generate migrations (if any)
-```python manage.py showmigrations```
-```python manage.py makemigrations```
-```python manage.py migrate```
+```python
+python manage.py showmigrations
+```
+```python
+python manage.py makemigrations
+```
+```python
+python manage.py migrate
+```
 
 ---
 ### Create an application in the project
-```python manage.py startapp applicaiton-name```
+```python
+python manage.py startapp application-name
+```
+
+Please note that a single `project` can have multiple `applications` inside it
 
 ---
 ### Collect static files (if any)
-```python manage.py collectstatic```
+```python
+python manage.py collectstatic
+```
 
 ---
-### Edit ```settings.py```
-vim 
+### Edit ``settings.py``
+```python
+vim project-name/settings.py
+```
+
+These are the settings of the entire `project` not the `applications`!
 
 ---
 ### Run server
-```python manage.py runserver 0.0.0.0:8000```
+```python
+python manage.py runserver 0.0.0.0:8000
+```
