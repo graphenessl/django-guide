@@ -33,6 +33,19 @@ python manage.py startapp application-name
 ```
 
 Please note that a single `project` can have multiple `applications` inside it
+Do not forget to include the new project in `settings.py`:
+
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'application-name'
+]
+```
 
 ---
 ### Collect static files (if any)
