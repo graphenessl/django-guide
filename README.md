@@ -77,4 +77,31 @@ python manage.py runserver 0.0.0.0:8000
 ```
 ---
 ### Models now showing up in Django admin
-All models, which **you would like to be shown** in the Django admin, must be **manually specified** in the **`admin.py`** file inside your application directory.
+All models, which **you would like to be shown** in the Django admin, must be **manually specified** in the **`admin.py`** file inside your application directory. Below is an example with a model named **`Product`**
+
+##### Define your model in ``models.py``
+```python
+class Product(models.Model):
+
+    # Name of the product
+    name                = models.CharField(max_length=128, default=None, blank=True, null=True)
+
+    # Description of the product
+    description         = models.TextField(max_length=8096, default=None, blank=True, null=True)
+
+    # Date when the product is created
+    date_posted         = models.DateTimeField(default=datetime.now)
+
+    # Return name: otherwise it is not shown in the Django Admin
+    def __unicode__(self):
+        return self.content
+```
+
+##### Add to ``admin.py``
+```python
+# REQUIRED: All custom models which need to be shown in Django admin, must be manually INCLUDED here:
+from .models import Product
+
+# REQUIRED: All custom models which need to be shown in Django admin, must be manually also REGISTERED here:
+admin.site.register(Product)
+```
