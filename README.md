@@ -76,7 +76,7 @@ If you have Django admin module enabled, this user will be able to login in the 
 python manage.py runserver 0.0.0.0:8000
 ```
 ---
-### Models now showing up in Django admin
+### Models not showing up in Django admin
 All models, which **you would like to be shown** in the Django admin, must be **manually specified** in the **`admin.py`** file inside your application directory. Below is an example with a model named **`Product`**
 
 ##### Define your model in ``models.py``
