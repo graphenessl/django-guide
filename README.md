@@ -3,11 +3,11 @@
 # Django guide and Cheet sheet
 A guide to setting up Django, together with some basic cheat sheet commands
 
-### Installation for Python 2.7
+### Installation for Python2.7 (legacy)
 ```python
 pip install Django==1.11.9
 ```
-### Installation for Python 3
+### Installation for Python3
 ```python
 python -m pip install Django
 ```
@@ -16,9 +16,29 @@ python -m pip install Django
 python -m django --version
 ```
 ---
+### Create a new virtual environment for Python2
+```python
+pip install virtualenv
+virtualenv project_name
+```
+
+### Activate the virtual environment
+```python
+source bin/activate
+```
+
+### Create vitual environment for Python3
+```python
+python3 -m venv virtual_environment_name
+```
+### Deactivate (exit) the virtual environment
+```python
+deactivate
+```
+---
 ### Start a project
 ```python
-django-admin startproject project-name
+django-admin startproject project_name
 ```
 
 ---
