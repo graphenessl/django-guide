@@ -7,7 +7,10 @@ A guide to setting up Django, together with some basic cheat sheet commands
 ```python
 pip install Django==1.11.9
 ```
-
+###Installation for Python 3
+```python
+python -m pip install Django
+```
 ---
 ### Start a project
 ```python
