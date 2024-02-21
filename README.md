@@ -11,8 +11,7 @@ pip install Django==1.11.9
 ```python
 python -m pip install Django
 ```
-
-## Get Django current version
+### Get Django current version
 ```python
 python -m django --version
 ```
